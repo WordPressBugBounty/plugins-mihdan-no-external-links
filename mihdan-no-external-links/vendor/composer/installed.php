@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'mihdan/mihdan-no-external-links',
-        'pretty_version' => '5.1.5',
-        'version' => '5.1.5.0',
-        'reference' => 'a6d16d367a6ceb1bbe468219125173021c653f99',
+        'pretty_version' => '5.1.6',
+        'version' => '5.1.6.0',
+        'reference' => 'eda3a90f6434e53d5238700433c3b2aa66195b62',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'mihdan/mihdan-no-external-links' => array(
-            'pretty_version' => '5.1.5',
-            'version' => '5.1.5.0',
-            'reference' => 'a6d16d367a6ceb1bbe468219125173021c653f99',
+            'pretty_version' => '5.1.6',
+            'version' => '5.1.6.0',
+            'reference' => 'eda3a90f6434e53d5238700433c3b2aa66195b62',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -47,9 +47,9 @@
             'dev_requirement' => false,
         ),
         'phpseclib/phpseclib' => array(
-            'pretty_version' => '3.0.19',
-            'version' => '3.0.19.0',
-            'reference' => 'cc181005cf548bfd8a4896383bb825d859259f95',
+            'pretty_version' => '3.0.34',
+            'version' => '3.0.34.0',
+            'reference' => '56c79f16a6ae17e42089c06a2144467acc35348a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpseclib/phpseclib',
             'aliases' => array(),

@@ -115,7 +115,6 @@ class Main {
 		$this->initiate();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
-
 	}
 
 	/**
@@ -263,7 +262,7 @@ class Main {
 
 		$plugin_i18n = new I18n( $this->get_plugin_name() );
 
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
+		$this->loader->add_action( 'init', $plugin_i18n, 'load_plugin_textdomain' );
 
 	}
 
@@ -341,15 +340,11 @@ class Main {
 			'skip_auth'               => false,
 			'skip_follow'             => false,
 			'redirect_page'           => 0,
-			'redirect_message'        => __(
-				'You will be redirected in 3 seconds. If your browser does not automatically redirect you, please <a href="%linkurl%">click here</a>.',
-				$this->plugin_name
-			),
+			'redirect_message'        => 'You will be redirected in 3 seconds. If your browser does not automatically redirect you, please <a href="%linkurl%">click here</a>.',
 			'output_buffer'           => $output_buffer,
 		);
 
 		$this->options = $this->validate_options( $options );
-
 	}
 
 	/**
@@ -546,19 +541,14 @@ class Main {
 		$this->loader->add_filter( 'install_plugins_table_api_args_' . MIHDAN_NO_EXTERNAL_LINKS_SLUG, $this->admin, 'install_plugins_table_api_args' );
 
 		$this->loader->add_filter( 'set-screen-option', $this->admin, 'mask_page_set_screen_options', null, 3 );
-		$hook_name = vsprintf(
-			'load-%s_page_%s-masks',
-			[ strtolower( sanitize_file_name( __( 'No External Links', $this->plugin_name ) ) ), $this->get_plugin_name() ]
-		);
+
+		$hook_name = sprintf( 'load-no-external-links_page_%s-masks', $this->get_plugin_name() );
 
 		$this->loader->add_action( $hook_name, $this->admin, 'mask_page_screen_options' );
 
 		$this->loader->add_filter( 'set-screen-option', $this->admin, 'log_page_set_screen_options', null, 3 );
 
-		$hook_name = vsprintf(
-			'load-%s_page_%s-logs',
-			[ strtolower( sanitize_file_name( __( 'No External Links', $this->plugin_name ) ) ), $this->get_plugin_name() ]
-		);
+		$hook_name = sprintf( 'load-no-external-links_page_%s-logs', $this->get_plugin_name() );
 
 		$this->loader->add_action( $hook_name, $this->admin, 'log_page_screen_options' );
 
