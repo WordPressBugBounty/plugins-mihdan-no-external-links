@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'mihdan/mihdan-no-external-links',
-        'pretty_version' => '5.1.4',
-        'version' => '5.1.4.0',
-        'reference' => '26f9863c04d7e172471fd172878d7c8cdd4137a6',
+        'pretty_version' => '5.1.5',
+        'version' => '5.1.5.0',
+        'reference' => 'a6d16d367a6ceb1bbe468219125173021c653f99',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'mihdan/mihdan-no-external-links' => array(
-            'pretty_version' => '5.1.4',
-            'version' => '5.1.4.0',
-            'reference' => '26f9863c04d7e172471fd172878d7c8cdd4137a6',
+            'pretty_version' => '5.1.5',
+            'version' => '5.1.5.0',
+            'reference' => 'a6d16d367a6ceb1bbe468219125173021c653f99',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
