@@ -4,7 +4,7 @@ Contributors: mihdan, kaggdesign
 Tags: seo, seo-hide, links, posts, comments
 Requires at least: 5.7.4
 Tested up to: 6.8
-Stable tag: 5.1.6
+Stable tag: 5.1.6.2
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -60,6 +60,12 @@ No External Links **does not** make any changes to your database, it just proces
 2. Upload the 'mihdan-noexternallinks' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
 3. Activate No External Links from your Plugins page.
 4. [Optional] Configure No External Links settings.
+
+== Frequently Asked Questions ==
+
+= How can I report security bugs? =
+
+You can report security bugs through the Patchstack Vulnerability Disclosure Program. The Patchstack team helps validate, triage and handle any security vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/9e5fb8ab-3bfb-4d24-9b50-c3f6c7512f1a)
 
 == Changelog ==
 
@@ -473,13 +479,3 @@ Multilanguagal release.
 
 = 0.01 =
 First release.
-
-== System Requirements ==
-
-* WordPress 5.0+
-* PHP 7.4+
-
-== Known Issues ==
-
-There are no known errors at this time.
-
