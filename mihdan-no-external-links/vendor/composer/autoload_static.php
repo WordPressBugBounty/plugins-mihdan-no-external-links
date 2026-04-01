@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit587361ab74d94e32d43c2111ba2c71dd
+class ComposerStaticInitb8f2aa8bdb521d9900cff66a8fa5fef2
 {
     public static $files = array (
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
@@ -12,22 +12,22 @@ class ComposerStaticInit587361ab74d94e32d43c2111ba2c71dd
     );
 
     public static $prefixLengthsPsr4 = array (
-        'p' => 
+        'p' =>
         array (
             'phpseclib3\\' => 11,
         ),
-        'P' => 
+        'P' =>
         array (
             'ParagonIE\\ConstantTime\\' => 23,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'phpseclib3\\' => 
+        'phpseclib3\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
         ),
-        'ParagonIE\\ConstantTime\\' => 
+        'ParagonIE\\ConstantTime\\' =>
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
         ),
@@ -375,6 +375,7 @@ class ComposerStaticInit587361ab74d94e32d43c2111ba2c71dd
         'phpseclib3\\Math\\Common\\FiniteField\\Integer' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Math/Common/FiniteField/Integer.php',
         'phpseclib3\\Math\\PrimeField' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Math/PrimeField.php',
         'phpseclib3\\Math\\PrimeField\\Integer' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Math/PrimeField/Integer.php',
+        'phpseclib3\\Net\\SCP' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SCP.php',
         'phpseclib3\\Net\\SFTP' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SFTP.php',
         'phpseclib3\\Net\\SFTP\\Stream' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SFTP/Stream.php',
         'phpseclib3\\Net\\SSH2' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Net/SSH2.php',
@@ -386,9 +387,9 @@ class ComposerStaticInit587361ab74d94e32d43c2111ba2c71dd
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit587361ab74d94e32d43c2111ba2c71dd::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit587361ab74d94e32d43c2111ba2c71dd::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit587361ab74d94e32d43c2111ba2c71dd::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb8f2aa8bdb521d9900cff66a8fa5fef2::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb8f2aa8bdb521d9900cff66a8fa5fef2::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitb8f2aa8bdb521d9900cff66a8fa5fef2::$classMap;
 
         }, null, ClassLoader::class);
     }

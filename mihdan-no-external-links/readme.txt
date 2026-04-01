@@ -3,8 +3,8 @@ Author: mihdan
 Contributors: mihdan, kaggdesign
 Tags: seo, seo-hide, links, posts, comments
 Requires at least: 5.7.4
-Tested up to: 6.9
-Stable tag: 5.1.8
+Tested up to: 7.0
+Stable tag: 5.2.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -63,11 +63,25 @@ No External Links **does not** make any changes to your database, it just proces
 
 == Frequently Asked Questions ==
 
-= How can I report security bugs? =
+= Where do I report security bugs found in this plugin? =
 
-You can report security bugs through the Patchstack Vulnerability Disclosure Program. The Patchstack team helps validate, triage and handle any security vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/9e5fb8ab-3bfb-4d24-9b50-c3f6c7512f1a)
+Please report security vulnerabilities by email to:
+
+**security@kagg.eu**
+
+When reporting a vulnerability, please include as much information as possible to help us reproduce and investigate the issue, such as:
+
+- A clear description of the vulnerability
+- Steps to reproduce
+- Proof-of-concept or exploit code (if available)
+- Affected versions
+
+We will review your report and respond as quickly as possible.
 
 == Changelog ==
+
+= 5.2.0 (02.04.2026) =
+* Tested with WordPress 7.0
 
 = 5.1.8 (29.11.2025) =
 * Resolved #[42](https://github.com/mihdan/mihdan-no-external-links/issues/42)
